@@ -138,6 +138,26 @@
 
 					<!-- Two -->
 						<section class="wrapper style1 container special">
+							<script type="text/javascript">
+							function animateValue(id, start, end, duration) {
+    					var range = end - start;
+    					var current = start;
+    					var increment = end > start? 1 : -1;
+    					var stepTime = Math.abs(Math.floor(duration / range));
+    					var obj = document.getElementById(id);
+    					var timer = setInterval(function() {
+        				current += increment;
+        				obj.innerHTML = current;
+        				if (current == end) {
+            				clearInterval(timer);
+        				}
+    						}, stepTime);
+							}
+
+							animateValue("v1", 1, 223, 2000);
+							animateValue("v2", 1, 60, 2000);
+							animateValue("v3", 1, 5, 2000);
+							</script>
 							<div class="row">
 								<div class="4u 12u(narrower)">
 									<style>
@@ -147,7 +167,7 @@
 									</style>
 
 									<section>
-										<h1 class="big_number"><strong>223</strong></h1>
+										<h1 class="big_number" id="v1"><strong>223</strong></h1>
 										<header>
 											<h3>kids coded with us!</h3>
 										</header>
@@ -157,7 +177,7 @@
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<h1 class="big_number"><strong>60</strong></h1>
+										<h1 class="big_number" id="v2"><strong>60</strong></h1>
 										<header>
 											<h3>High school volunteers</h3>
 										</header>
@@ -167,7 +187,7 @@
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<h1 class="big_number"><strong>5</strong></h1>
+										<h1 class="big_number" id="v3"><strong>5</strong></h1>
 										<header>
 											<h3>branches in 2017</h3>
 										</header>
