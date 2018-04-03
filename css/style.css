@@ -298,6 +298,10 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: scale(1.1);
 }
 
+#fh5co-header{
+  color: #05baa5
+}
+
 #fh5co-header .display-tc,
 .fh5co-cover .display-tc {
   display: table-cell !important;
