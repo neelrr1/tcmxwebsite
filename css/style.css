@@ -15,11 +15,11 @@
 }
 
 @media (pointer:coarse) {
-  * {
-    display: none;
-  }
   .mobile {
     display: block !important;
+  }
+  div {
+    display: none;
   }
 }
 
