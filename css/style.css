@@ -18,6 +18,9 @@
   * {
     display: none;
   }
+  .mobile {
+    display: block !important;
+  }
 }
 
 body {
