@@ -23,6 +23,12 @@
   }
 }
 
+@media (pointer:fine) {
+  .mobile {
+    display: none;
+  }
+}
+
 body {
   font-family: "Product Sans", Arial, sans-serif;
   font-weight: 400;
